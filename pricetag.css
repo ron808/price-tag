@@ -1,0 +1,130 @@
+.pricing-table {
+  margin: 60px auto;
+}
+#ab1 {
+  color: rgba(158, 50, 59, 0.5);
+}
+#ab2 {
+  color: rgba(255, 111, 123, 0.8);
+}
+.pricing-table::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.pricing-table > div {
+  display: block;
+  float: left;
+  width: 48%;
+  min-height: 1px;
+  background-color: #fff;
+  color: #555;
+}
+.pricing-table > div:not(:last-child) {
+  margin-right: 2%;
+}
+.pricing-block {
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.pricing-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pricing-price__value {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(234, 240, 246, 0.7);
+}
+.pricing-price__currency {
+  font-size: 2rem;
+  position: relative;
+  bottom: 29px;
+  font-weight: 600;
+  color: rgba(234, 240, 246, 0.4);
+}
+.pricing-price__duration {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 35px;
+  color: rgba(234, 240, 246, 0.4);
+}
+.pricing-body ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+.pricing-body ul li {
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+}
+.pricing-body ul li:nth-child(2n) {
+  background-color: #fff;
+}
+.pricing-body ul li:nth-child(2n + 1) {
+  background-color: #f8f8f8;
+}
+.pricing-button {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  margin: 0px;
+  padding: 20px;
+  background-color: #905d5d;
+  border-bottom: dotted 0 #5c4a4e;
+}
+.pricing-popular .pricing-button {
+  background-color: rgb(238, 96, 96);
+  color: #fff;
+}
+.pricing-popular .pricing-button:hover {
+  color: #f88;
+  background-color: #333333;
+}
+.pricing-footer {
+  padding: 40px 0 0;
+}
+@media screen and (max-width: 1023px) {
+  .pricing-table {
+    margin: auto;
+  }
+  .pricing-table > div {
+    float: none;
+    width: 100%;
+  }
+  .pricing-table > div:not(:last-child) {
+    margin-right: 0%;
+    margin-bottom: 20px;
+  }
+  .pricing-body {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .pricing-body ul li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .pricing-body ul li:not(:first-child) {
+    margin-left: -5px;
+  }
+  .pricing-body ul li:nth-child(2n) {
+    background-color: #e8e8e8;
+  }
+  .pricing-footer {
+    padding-top: 0;
+  }
+  .pricing-popular {
+    margin-top: 0;
+  }
+  .pricing-popular .pricing-header,
+  .pricing-popular .pricing-footer {
+    padding-top: 30px;
+  }
+}
